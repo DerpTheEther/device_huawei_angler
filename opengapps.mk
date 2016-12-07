@@ -1,0 +1,1 @@
+GAPPS_VARIANT := nano
