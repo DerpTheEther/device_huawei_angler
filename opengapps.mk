@@ -27,9 +27,5 @@ PRODUCT_PACKAGES += Music2
 # Google Wallet
 PRODUCT_PACKAGES += Wallet
 
-# Pissel Launcher
-PRODUCT_PACKAGES += PixelLauncher
-GAPPS_FORCE_PIXEL_LAUNCHER := true
-
 # Exclude Google Package Installer
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
