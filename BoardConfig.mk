@@ -32,6 +32,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 ENABLE_CPUSETS := true
 
 # Inline kernel building
+TARGET_GCC_VERSION_ARM64 := 6.x
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
