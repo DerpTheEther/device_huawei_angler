@@ -24,8 +24,5 @@ GAPPS_FORCE_MMS_OVERRIDES := true
 # Google Music
 PRODUCT_PACKAGES += Music2
 
-# Google Wallet
-PRODUCT_PACKAGES += Wallet
-
 # Exclude Google Package Installer
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
