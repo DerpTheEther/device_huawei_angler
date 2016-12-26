@@ -26,3 +26,12 @@ PRODUCT_PACKAGES += Music2
 
 # Exclude Google Package Installer
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
+
+# TBO apps (will be removed if theme ready or blacked out variants are installed)
+PRODUCT_PACKAGES += \
+	CalendarGooglePrebuilt \
+	Hangouts \
+	Photos \
+	PlusOne \
+	PrebuiltKeep \
+	YouTube
