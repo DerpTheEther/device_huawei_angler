@@ -142,6 +142,9 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 #NFC
 NXP_CHIP_TYPE := 2
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 USE_CLANG_PLATFORM_BUILD := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
