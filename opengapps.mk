@@ -24,8 +24,10 @@ GAPPS_FORCE_MMS_OVERRIDES := true
 # Google Music
 PRODUCT_PACKAGES += Music2
 
-# Exclude Google Package Installer
-GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
+# Exclude Google Package Installer and HotwordEnrollment (since it's in vendor)
+GAPPS_EXCLUDED_PACKAGES +=  \
+	GooglePackageInstaller \
+	Hotword
 
 # TBO apps (will be removed if theme ready or blacked out variants are installed)
 PRODUCT_PACKAGES += \
