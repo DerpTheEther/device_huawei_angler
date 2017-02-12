@@ -37,3 +37,11 @@ PRODUCT_PACKAGES += \
 	PlusOne \
 	PrebuiltKeep \
 	YouTube
+
+# Only build the round icons if they aren't disabled
+ifneq ($(PIXELICONS),false)
+	PRODUCT_PACKAGES += PixelLauncherIcons
+
+	DEVICE_PACKAGE_OVERLAYS += \
+		device/huawei/angler/overlay/pixelicons
+endif
