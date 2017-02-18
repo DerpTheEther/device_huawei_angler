@@ -1,11 +1,14 @@
 # Base package: nano
 GAPPS_VARIANT := nano
 
-# Chrome
+# Google Calculator
+PRODUCT_PACKAGES += CalculatorGoogle
+
+# Google Chrome
 PRODUCT_PACKAGES += Chrome
 GAPPS_FORCE_BROWSER_OVERRIDES := true
 
-# Drive
+# Google Drive
 PRODUCT_PACKAGES += Drive
 
 # Google Camera
