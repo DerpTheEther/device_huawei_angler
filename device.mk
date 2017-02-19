@@ -498,5 +498,7 @@ $(call add-product-sanitizer-module-config,cameraserver,never)
 $(call add-product-sanitizer-module-config,mm-qcamera-daemon,never)
 
 # Open GApps
-$(call inherit-product-if-exists, device/huawei/angler/opengapps.mk)
-$(call inherit-product-if-exists, vendor/google/build/opengapps-packages.mk)
+ifneq ($(HAS_GAPPS),false)
+    $(call inherit-product-if-exists, device/huawei/angler/opengapps.mk)
+    $(call inherit-product-if-exists, vendor/google/build/opengapps-packages.mk)
+endif
