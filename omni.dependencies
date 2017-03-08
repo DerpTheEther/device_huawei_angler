@@ -3,6 +3,6 @@
     "remote": "github",
     "repository": "Flash-ROM/kernel_huawei_angler",
     "target_path": "kernel/huawei/angler",
-    "revision": "n7.1.1"
+    "revision": "n7.1.1-flash"
   }
 ]
