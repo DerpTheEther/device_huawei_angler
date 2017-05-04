@@ -153,6 +153,9 @@ NXP_CHIP_TYPE := 2
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
+# Ignore vendor partition audio_effects.conf and use the device (system/etc/) one
+TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
+
 USE_CLANG_PLATFORM_BUILD := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
